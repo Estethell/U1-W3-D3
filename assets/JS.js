@@ -12,6 +12,7 @@ let funzione1 = function () {
   };
   let li = document.createElement("li");
   li.innerText = myData.inserisciLista;
+  li.addEventListener("click", funzione2);
   ulList.appendChild(li);
   inputLista.value = "";
   console.log(ulList);
@@ -23,7 +24,3 @@ buttonClick.onclick = funzione1;
 const funzione2 = function (e) {
   e.currentTarget.classList.add("addClass");
 };
-
-li.addEventListener("click", funzione2);
-
-console.log(ulList);
